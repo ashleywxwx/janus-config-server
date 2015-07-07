@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+management:
+  context-path: /admin
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:c:/workspace/janus-properties
+        git:
+          uri: https://github.com/AndrewBell/janus-properties
